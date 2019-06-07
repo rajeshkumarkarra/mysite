@@ -31,10 +31,10 @@ def contactform(request):
 
 def emailSubscribe(request):
 	print("hello")
-	email_s = request.POST['email']
+	email_s = request.POST['email_sub']
 	s= Subscribe(email=email_s)
 	s.save()
-	
+
 	return render(request, 'home/contact.html')
 
 def contact(request):
