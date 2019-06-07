@@ -282,8 +282,7 @@
                     </div><!--/.col-md-3 -->
                     
                     <div class="col-md-3">
-                        <form name="myform" action="/emailSubscribe/" method="post"  id="contact" novalidate>
-                        {% csrf_token %}
+                        
                         <div class="section-heading-2">
                             <h3 class="section-title">
                                 <span>Stay With us</span>
@@ -291,10 +290,13 @@
                         </div>
                         <div class="subscription">
                             <p></p>
+                        <form name="myform" action="/emailSubscribe/" method="post"  id="contact" novalidate>
+                        {% csrf_token %}
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Your E-mail" id="name" name ="email_sub" required data-validation-required-message="Please enter your name.">
                                 <input type="submit" class="btn btn-primary" value="Subscribe">
                             </div>
+                        </form>
                         </div>
                     </div>
                     
