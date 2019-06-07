@@ -32,7 +32,7 @@ def contactform(request):
 
 def emailSubscribe(request):
 	print("hello")
-	email_s = request.POST['email_sub']
+	email_s = request.POST['email']
 	s= Subscribe(email=email_s)
 	s.save()
 

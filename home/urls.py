@@ -30,6 +30,6 @@ urlpatterns = [
     path('service/',views.service,name='service'),
     # below contactform/ (from "form action in contact.html) (and id = contact in contact.html) is for whenever client submit his details in the contactform
     path('contactform/',views.contactform,name='contactform'),
-    path('emailSubscribe/', views.contact, name='emailSubscribe'),
+    path('emailSubscribe/', views.emailSubscribe, name='emailSubscribe'),
 ]
 
