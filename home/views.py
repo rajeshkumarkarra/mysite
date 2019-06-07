@@ -29,6 +29,13 @@ def contactform(request):
  
 	return render(request,'home/contact.html')
 
+def emailSubscribe(request):
+	print("hello")
+	email_s = request.POST['email']
+	s= Subscribe(email=email_s)
+	s.save()
+	return render(request, 'home/contact.html')
+
 def contact(request):
 	return render(request, 'home/contact.html')
 

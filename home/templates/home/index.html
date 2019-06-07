@@ -620,12 +620,15 @@
                             </h3>
                         </div>
                         <div class="subscription">
-                            <p></p>
+                            <p>Let's stay together.</p>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your E-mail" id="name" required data-validation-required-message="Please enter your name.">
+                                <form name="myform1" action="/emailSubscribe/" method="post"  id="index" novalidate>
+                                    {% csrf_token %}
+                                <input type="text" class="form-control" placeholder="Your E-mail" id="email" name="email"required data-validation-required-message="Please enter your name.">
                                 <input type="submit" class="btn btn-primary" value="Subscribe">
                             </div>
                         </div>
+                    </form>
                     </div>
                     
                     <div class="col-md-3">
