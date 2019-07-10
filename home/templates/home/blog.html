@@ -2,30 +2,22 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
 <html lang="en">
-
     <head>
         <meta name="google-site-verification" content="7Ns4muRA-ERJyL09RTp0ChxyJDD6rEtuERLT9ZuQw_k" />
-
         <!-- Basic -->
         <title>Blog | S.T.E.M HUB</title>
-
         <!-- Define Charset -->
         <meta charset="utf-8">
-
         <!-- Responsive Metatag -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
         <!-- Page Description and Author -->
         <meta name="description" content="Sulfur - Responsive HTML5 Template">
         <meta name="author" content="Shahriyar Ahmed">
         {% load staticfiles %}
-
         <!-- Bootstrap CSS  -->
         <link rel="stylesheet" href="{% static 'home/asset/bootstrap/css/bootstrap.min.css' %}" type="text/css">
-
         <!-- Font Awesome CSS -->
         <link rel="stylesheet" href="{% static 'home/asset/font-awesome/css/font-awesome.min.css' %}" type="text/css">
-
         <!-- Owl Carousel CSS -->
         <link rel="stylesheet" href="{% static 'home/asset/css/owl.carousel.css' %}" type="text/css' %}">
         <link rel="stylesheet" href="{% static 'home/asset/css/owl.theme.css' %}" type="text/css' %}">
@@ -36,42 +28,34 @@
         
         <!-- Lightbox CSS -->
         <link rel="stylesheet" type="text/css" href="{% static 'home/asset/css/lightbox.css' %}">
-
         <!-- Sulfur CSS Styles  -->
         <link rel="stylesheet" type="text/css" href="{% static 'home/asset/css/style.css' %}">
-
         <!-- Responsive CSS Style -->
         <link rel="stylesheet" type="text/css" href="{% static 'home/asset/css/responsive.css' %}">
-
-
         <script src="{% static 'home/asset/js/modernizrr.js' %}"></script>
-
         
-
-
     </head>
     {% block content %}
-
-    <body>
-    
-        <header class="clearfix">
-        
-            <!-- Start Top Bar -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="top-bar">
-                            <div class="row">
+        <body>
+            
+            <header class="clearfix">
+                
+                <!-- Start Top Bar -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="top-bar">
+                                <div class="row">
                                     
-                                <div class="col-md-6">
-                                    <!-- Start Contact Info -->
-                                    <ul class="contact-details">
-                                        <li><a href="#"><i class="fa fa-phone"></i>+91 (703) 241-5866</a>
+                                    <div class="col-md-6">
+                                        <!-- Start Contact Info -->
+                                        <ul class="contact-details">
+                                            <li><a href="#"><i class="fa fa-phone"></i>+91 (703) 241-5866</a>
                                         </li>
                                         <li><a href="#"><i class="fa fa-envelope-o"></i> info@stemhub.tech</a>
-                                        </li> 
-                                    </ul>
-                                    <!-- End Contact Info -->
+                                    </li>
+                                </ul>
+                                <!-- End Contact Info -->
                                 </div><!-- .col-md-6 -->
                                 
                                 <div class="col-md-6">
@@ -106,506 +90,556 @@
                                         </li>
                                     </ul>
                                     <!-- End Social Links -->
-                                </div><!-- .col-md-6 -->
+                                    </div><!-- .col-md-6 -->
+                                </div>
+                                
+                                
                             </div>
-                                
-                                
                         </div>
-                    </div>                        
-
-                </div><!-- .row -->
-            </div><!-- .container -->
-            <!-- End Top Bar -->
-        
-            <!-- Start  Logo & Naviagtion  -->
-            <div class="navbar navbar-default navbar-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <!-- Stat Toggle Nav Link For Mobiles -->
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <!-- End Toggle Nav Link For Mobiles -->
-                        <a class="navbar-brand" href="index.html"><b>StemHub</b></a>
-                    </div>
-                    <div class="navbar-collapse collapse">
+                        </div><!-- .row -->
+                        </div><!-- .container -->
+                        <!-- End Top Bar -->
                         
-                        <!-- Start Navigation List -->
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="{% url 'index' %}">Home</a>
-                            </li>
-                            <li>
-                                <a href="/about/">AboutUs</a>
-                            </li>
-                            <li>
-                                <a href="/service/">Service</a>
-                            </li>
-                            <li>
-                                <a href="/portfolio/">Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="/blog/">Blog</a>
-                                <ul class="dropdown">
-                                    <!--<li>
-                                        <a href="/blog-item/">ItemPage</a>
-                                    </li>-->
+                        <!-- Start  Logo & Naviagtion  -->
+                        <div class="navbar navbar-default navbar-top">
+                            <div class="container">
+                                <div class="navbar-header">
+                                    <!-- Stat Toggle Nav Link For Mobiles -->
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <i class="fa fa-bars"></i>
+                                    </button>
+                                    <!-- End Toggle Nav Link For Mobiles -->
+                                    <a class="navbar-brand" href="index.html"><b>StemHub</b></a>
+                                </div>
+                                <div class="navbar-collapse collapse">
+                                    
+                                    <!-- Start Navigation List -->
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li>
+                                            <a href="{% url 'index' %}">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="/about/">AboutUs</a>
+                                        </li>
+                                        <li>
+                                            <a href="/service/">Service</a>
+                                        </li>
+                                        <li>
+                                            <a href="/portfolio/">Portfolio</a>
+                                        </li>
+                                        <li>
+                                            <a href="/blog/">Blog</a>
+                                            <ul class="dropdown">
+                                                <!--<li>
+                                                    <a href="/blog-item/">ItemPage</a>
+                                                </li>-->
+                                            </ul>
+                                        </li>
+                                        <li><a class="active" href="/contact/">Contact</a>
+                                    </li>
                                 </ul>
-                            </li>
-                            <li><a class="active" href="/contact/">Contact</a>
-                            </li>
-                        </ul>
-                        <!-- End Navigation List -->
+                                <!-- End Navigation List -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Header Logo & Naviagtion -->
+                    
+                </header>
+                
+                
+                <!-- Start Header Section -->
+                <div class="page-header">
+                    <div class="overlay">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1>Blog</h1>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- End Header Logo & Naviagtion -->
-            
-        </header>
-        
-        
-        <!-- Start Header Section -->
-        <div class="page-header">
-            <div class="overlay">
+                <!-- End Header Section -->
+                
+                
+                
+                
+                
+                <!-- Start Blog Page Section -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <h1>Blog</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Header Section -->
-        
-        
-        
-        
-        
-        <!-- Start Blog Page Section -->
-        <div class="container">
-            <div class="row">
-                
-                <!-- Start Blog Body Section -->
-                <div class="col-md-8 blog-body">
-                    
-                    <!-- Start Blog post -->
-                    <div class="blog-post">
-                        <div class="post-img">
-                            <img src="{% static 'home/asset/images/blog/MyWebsite.jpg' %}" class="img-responsive" alt="Blog image">
-                        </div>
-                        <h1 class="post-title"><a href="#">Personal Portfolio Website</a></h1>
-                        <!--
-                        <ul class="post-meta">
-							<li><i class="fa fa-clock-o"></i>October 25 2014</li>
-							<li><i class="fa fa-user"></i><a href="#">Super User</a></li>
-							<li><i class="fa fa-file"></i><a href="#">Blog</a></li>
-                            <li><i class="fa fa-tags"></i><a href="#">Women Rights</a></li>
-							<li><i class="fa fa-comments"></i><a href="#">4 Comments</a></li>
-						</ul>
-                    -->
                         
-                        <p class="post-content">Personal Portfolio Website using Django2.2, Bootstrap and Json</p>
-                        <a href="https://inno-techies.blogspot.com/" class="btn btn-primary readmore">Read more...<i class="fa fa-angle-right"></i></a>
-                    </div>
-                    <!-- End Blog Post -->
-                    
-                    <!-- Start Blog post -->
-                    <div class="blog-post">
-                        <div class="post-img">
-                            <img src="{% static 'home/asset/images/blog/MyKaggle.jpg' %}" class="img-responsive" alt="Blog image">
-                        </div>
-                        <h1 class="post-title"><a href="#">My Kaggle</a></h1>
-                        <!--
-                        <ul class="post-meta">
-							<li><i class="fa fa-clock-o"></i>October 25 2014</li>
-							<li><i class="fa fa-user"></i><a href="#">Super User</a></li>
-							<li><i class="fa fa-file"></i><a href="#">Blog</a></li>
-							<li><i class="fa fa-tags"></i><a href="#">Elderly</a> <a href="#">Education</a></li>
-							<li><i class="fa fa-comments"></i><a href="#">1 Comments</a></li>
-						</ul>
-                    -->
-                        
-                        <p class="post-content">Learn Data Science from Kaggle</p>
-                        <a href="https://inno-techies.blogspot.com/" class="btn btn-primary readmore">Read more...<i class="fa fa-angle-right"></i></a>
-                    </div>
-                    <!-- End Blog post -->
-                    
-                    
-                    <!-- Start Pagination -->
-                    <!--<nav>
-                        <ul class="pagination">
-                            <li class="disabled"><a href="#" aria-label="Start">Start</a></li>
-                            <li class="disabled"><a href="#" aria-label="Previous">Prev</a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">Next</a></li>
-                            <li><a href="#">End</a></li>
-                        </ul>
-                    </nav>-->
-                    <!-- End Pagination -->
-                    
-                </div>
-                <!-- End Blog Body Section -->
-                
-                <!-- Start Sidebar Section -->
-                <div class="col-md-4 sidebar right-sidebar">
-                    
-                    
-                    <!-- Start Flickr Widget -->
-                    <!--<div class="widget flickr-widget">
-                        
-                        <div class="section-heading-2">
-                            <h3 class="section-title">
-                                <span>Flickr Stream</span>
-                            </h3>
-                        </div>
-                        
-                        <ul class="flickr-list">
-                            <li>
-                                <a href="{% static 'home/asset/images/flickr/8.jpg' %}" data-lightbox="picture-1">
-                                    <img src="asset/images/flickr/8.jpg' %}" alt="" class="img-responsive">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{% static 'home/asset/images/flickr/7.jpg' %}" data-lightbox="picture-2">
-                                    <img src="{% static 'home/asset/images/flickr/7.jpg' %}" alt="" class="img-responsive">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{% static 'home/asset/images/flickr/6.jpg' %}" data-lightbox="picture-3">
-                                    <img src="{% static 'home/asset/images/flickr/6.jpg' %}" alt="" class="img-responsive">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{% static 'home/asset/images/flickr/5.jpg' %}" data-lightbox="picture-4">
-                                    <img src="{% static 'home/asset/images/flickr/5.jpg' %}" alt="" class="img-responsive">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{% static 'home/asset/images/flickr/4.jpg' %}" data-lightbox="picture-5">
-                                    <img src="{% static 'home/asset/images/flickr/4.jpg' %}" alt="" class="img-responsive">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{% static 'home/asset/images/flickr/3.jpg' %}" data-lightbox="picture-6">
-                                    <img src="{% static 'home/asset/images/flickr/3.jpg' %}" alt="" class="img-responsive">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{% static 'home/asset/images/flickr/2.jpg' %}" data-lightbox="picture-7">
-                                    <img src="{% static 'home/asset/images/flickr/2.jpg' %}" alt="" class="img-responsive">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{% static 'home/asset/images/flickr/1.jpg' %}" data-lightbox="picture-8">
-                                    <img src="{% static 'home/asset/images/flickr/1.jpg' %}" alt="" class="img-responsive">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>-->
-                    <!-- End Flickr Widget -->
-                    
-                    
-                    
-                    <!-- Start Recent Post Widget -->
-                   <!-- <div class="widget widget-recent-post">
-                        
-                        <div class="section-heading-2">
-                            <h3 class="section-title">
-                                <span>Recent Post</span>
-                            </h3>
-                        </div>
-                        
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#">
-                                    <img class="media-object" src="{% static 'home/asset/images/recent-post/post-02.jpg' %}" alt="...">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading"><a href="#">Nulla facilisi integer lacinia sollicitudin massa</a></h4>
-                                <ul>
-                                    <li><a href="#">Super User</a></li>
-                                    <li>15 October 2014</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#">
-                                    <img class="media-object" src="{% static 'home/asset/images/recent-post/post-03.jpg' %}" alt="...">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading"><a href="#">Quisque cursus metus vitae pharetra auctor sem massa</a></h4>
-                                <ul>
-                                    <li><a href="#">Super User</a></li>
-                                    <li>15 October 2014</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#">
-                                    <img class="media-object" src="asset/images/recent-post/post-04.jpg" alt="...">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading"><a href="#">Praesent libero sed cursus ante dapibus diam</a></h4>
-                                <ul>
-                                    <li><a href="#">Super User</a></li>
-                                    <li>15 October 2014</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <!-- End Recent Post Widget -->
-                    
-                    
-                    <!-- Start Blog categories widget -->
-                    <!--
-                    <div class="widget widget-categories">
-                        
-                        <div class="section-heading-2">
-                            <h3 class="section-title">
-                                <span>Blog Categories</span>
-                            </h3>
-                        </div>
-                        
-                        <ul>
-                            <li>
-                                <i class="fa fa-angle-double-right"></i>
-                                <a href="#">Blog</a>
-                                <a href="#" class="cat-counter">(4)</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-angle-double-right"></i>
-                                <a href="#">News</a>
-                                <a href="#" class="cat-counter">(0)</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-angle-double-right"></i>
-                                <a href="#">Charity</a>
-                                <a href="#" class="cat-counter">(0)</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-angle-double-right"></i>
-                                <a href="#">Fashion</a>
-                                <a href="#" class="cat-counter">(0)</a>
-                            </li>
-                        </ul>
-                        
-                    </div>
-                    <!-- End Blog categories widget -->
-                    
-                    
-                    <!-- Start Tag Cloud Widget -->
-                    <!--
-                    <div class="widget widget-tags">
-                        
-                        <div class="section-heading-2">
-                            <h3 class="section-title">
-                                <span>Popular Tags</span>
-                            </h3>
-                        </div>
-                        
-                        <div class="tagcloud">
-                            <a href="#">Charity</a>
-							<a href="#">Children</a>
-							<a href="#">Education</a>
-							<a href="#">Elderly</a>
-							<a href="#">Humanity</a>
-							<a href="#">Women Rights</a>
-				        </div>
-                        
-                    </div>
-                    <!-- End Tag Cloud Widget -->
-                    
-                    
-                    
-                </div>
-                <!-- End Sidebar Section -->
-                
-            </div>
-        </div>
-        <!-- End Blog Page Section -->
-        
-        
-        
-        
-        
-        
-        <!-- Start Footer Section -->
-        <section id="footer-section" class="footer-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="section-heading-2">
-                            <h3 class="section-title">
-                                <span>Office Address</span>
-                            </h3>
-                        </div>
-                        
-                        <div class="footer-address">
-                            <ul>
-                                <li class="footer-contact"><i class="fa fa-home"></i>Hyderabad, Telangana, INDIA</li>
-                                <li class="footer-contact"><i class="fa fa-envelope"></i><a href="#">info@stemhub.tech</a></li>
-                                <li class="footer-contact"><i class="fa fa-phone"></i>+91 (703) 241-5866</li>
-                                <li class="footer-contact"><i class="fa fa-globe"></i><a href="#" target="_blank">www.stemhub.tech</a></li>
-                            </ul>
-                        </div>
-                    </div><!--/.col-md-3 -->
-                    
-                    
-                    <!--<div class="col-md-3">
-                        <div class="section-heading-2">
-                            <h3 class="section-title">
-                                <span>Latest Tweet</span>
-                            </h3>
-                        </div>
-                        
-                        <div class="latest-tweet">
-                            <div class="media">
-                                <div class="media-left">
-                                    <i class="fa fa-twitter fa-2x media-object"></i>
+                        <!-- Start Blog Body Section -->
+                        <div class="col-md-8 blog-body">
+                            
+                            <!-- Start Blog post -->
+                            <div class="blog-post">
+                                <div class="post-img">
+                                    <img src="{% static 'home/asset/images/blog/MyWebsite.jpg' %}" class="img-responsive" alt="Blog image">
                                 </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">About 15 days ago</h4>
-                                    <p>Finally Succeeded</p>
+                                <h1 class="post-title"><a href="#">Personal Portfolio Website</a></h1>
+                                <!--
+                                <ul class="post-meta">
+                                                                <li><i class="fa fa-clock-o"></i>October 25 2014</li>
+                                                                <li><i class="fa fa-user"></i><a href="#">Super User</a></li>
+                                                                <li><i class="fa fa-file"></i><a href="#">Blog</a></li>
+                                    <li><i class="fa fa-tags"></i><a href="#">Women Rights</a></li>
+                                                                <li><i class="fa fa-comments"></i><a href="#">4 Comments</a></li>
+                                                        </ul>
+                                -->
+                                
+                                <p class="post-content">Personal Portfolio Website using Django2.2, Bootstrap and Json</p>
+                                <a href="https://inno-techies.blogspot.com/" class="btn btn-primary readmore">Read more...<i class="fa fa-angle-right"></i></a>
+                            </div>
+                            <!-- End Blog Post -->
+                            
+                            <!-- Start Blog post -->
+                            <div class="blog-post">
+                                <div class="post-img">
+                                    <img src="{% static 'home/asset/images/blog/MyKaggle.jpg' %}" class="img-responsive" alt="Blog image">
                                 </div>
+                                <h1 class="post-title"><a href="#">My Kaggle</a></h1>
+                                <!--
+                                <ul class="post-meta">
+                                                                <li><i class="fa fa-clock-o"></i>October 25 2014</li>
+                                                                <li><i class="fa fa-user"></i><a href="#">Super User</a></li>
+                                                                <li><i class="fa fa-file"></i><a href="#">Blog</a></li>
+                                                                <li><i class="fa fa-tags"></i><a href="#">Elderly</a> <a href="#">Education</a></li>
+                                                                <li><i class="fa fa-comments"></i><a href="#">1 Comments</a></li>
+                                                        </ul>
+                                -->
+                                
+                                <p class="post-content">Learn Data Science from Kaggle</p>
+                                <a href="https://inno-techies.blogspot.com/" class="btn btn-primary readmore">Read more...<i class="fa fa-angle-right"></i></a>
                             </div>
-                        </div>
-                    </div>-->
-                    <!--/.col-md-3 -->
-                    
-                    <div class="col-md-3">
-                        <div class="section-heading-2">
-                            <h3 class="section-title">
-                                <span>Stay With us</span>
-                            </h3>
-                        </div>
-                        <div class="subscription">
-                            <p></p>
-                            <div class="form-group">
-                            <form name="myform4" action="/emailSubscribe/" method="post"  id="blog" novalidate>
-                                    {% csrf_token %}
-                                <input type="text" class="form-control" placeholder="Your E-mail" id="name" name = "email"required data-validation-required-message="Please enter your name.">
-                                <input type="submit" class="btn btn-primary" value="Subscribe">
-                            </div>
-                        </div>
-                    </div>
-                    
-                   <!-- <div class="col-md-3">
-                        <div class="section-heading-2">
-                            <h3 class="section-title">
-                                <span>FLICKR STREAM</span>
-                            </h3>
-                        </div>
-                        
-                        <div class="flickr-widget">
-                            <ul class="flickr-list">
-                                <li>
-                                    <a href="{% static 'home/asset/images/portfolio/MyKaggle.jpg' %}" data-lightbox="picture-1">
-                                        <img src="{% static 'home/asset/images/portfolio/MyKaggle.jpg' %}" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{% static 'home/asset/images/portfolio/MyGithub.jpg' %}" data-lightbox="picture-2">
-                                        <img src="{% static 'home/asset/images/portfolio/MyGithub.jpg' %}" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{% static 'home/asset/images/portfolio/MyWebsite.jpg' %}" data-lightbox="picture-3">
-                                        <img src="{% static 'home/asset/images/portfolio/MyWebsite.jpg' %}" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{% static 'home/asset/images/portfolio/MyGithub.jpg' %}" data-lightbox="picture-4">
-                                        <img src="{% static 'home/asset/images/portfolio/MyGithub.jpg' %}" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{% static 'home/asset/images/portfolio/MyWebsite.jpg' %}" data-lightbox="picture-5">
-                                        <img src="{% static 'home/asset/images/portfolio/MyWebsite.jpg' %}" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{% static 'home/asset/images/portfolio/MyKaggle.jpg' %}" data-lightbox="picture-6">
-                                        <img src="{% static 'home/asset/images/portfolio/MyKaggle.jpg' %}" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{% static 'home/asset/images/portfolio/MyWebsite.jpg' %}" data-lightbox="picture-7">
-                                        <img src="{% static 'home/asset/images/portfolio/MyWebsite.jpg' %}" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{% static 'home/asset/images/portfolio/MyKaggle.jpg' %}" data-lightbox="picture-8">
-                                        <img src="{% static 'home/asset/images/portfolio/MyKaggle.jpg' %}" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><!--/.col-md-3 -->
-                </div><!--/.row -->
-            </div><!-- /.container -->
-        </section>
-        <!-- End Footer Section -->
-        
-        
-         <!-- Start Copyright Section -->
-         
-      <!--  <div id="copyright-section" class="copyright-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="copyright">
-                            Copyright © 2014. All Rights Reserved.Design and Developed by <a href="http://www.themefisher.com">Themefisher</a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-5">
-                        <div class="copyright-menu pull-right">
-                        
-                            <ul>
-                                <li><a href="#" class="active">Home</a></li>
-                                <li><a href="#">Sample Site</a></li>
-                                <li><a href="#">getbootstrap.com</a></li>
-                            </ul>
+                            <!-- End Blog post -->
+                            
+                            
+                            <!-- Start Pagination -->
+                            <!--<nav>
+                                <ul class="pagination">
+                                    <li class="disabled"><a href="#" aria-label="Start">Start</a></li>
+                                    <li class="disabled"><a href="#" aria-label="Previous">Prev</a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">Next</a></li>
+                                    <li><a href="#">End</a></li>
+                                </ul>
+                            </nav>-->
+                            <!-- End Pagination -->
                             
                         </div>
+                        <!-- End Blog Body Section -->
+                        
+                        <!-- Start Sidebar Section -->
+                        <div class="col-md-4 sidebar right-sidebar">
+                            
+                            
+                            <!-- Start Flickr Widget -->
+                            <!--<div class="widget flickr-widget">
+                                
+                                <div class="section-heading-2">
+                                    <h3 class="section-title">
+                                    <span>Flickr Stream</span>
+                                    </h3>
+                                </div>
+                                
+                                <ul class="flickr-list">
+                                    <li>
+                                        <a href="{% static 'home/asset/images/flickr/8.jpg' %}" data-lightbox="picture-1">
+                                            <img src="asset/images/flickr/8.jpg' %}" alt="" class="img-responsive">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{% static 'home/asset/images/flickr/7.jpg' %}" data-lightbox="picture-2">
+                                            <img src="{% static 'home/asset/images/flickr/7.jpg' %}" alt="" class="img-responsive">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{% static 'home/asset/images/flickr/6.jpg' %}" data-lightbox="picture-3">
+                                            <img src="{% static 'home/asset/images/flickr/6.jpg' %}" alt="" class="img-responsive">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{% static 'home/asset/images/flickr/5.jpg' %}" data-lightbox="picture-4">
+                                            <img src="{% static 'home/asset/images/flickr/5.jpg' %}" alt="" class="img-responsive">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{% static 'home/asset/images/flickr/4.jpg' %}" data-lightbox="picture-5">
+                                            <img src="{% static 'home/asset/images/flickr/4.jpg' %}" alt="" class="img-responsive">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{% static 'home/asset/images/flickr/3.jpg' %}" data-lightbox="picture-6">
+                                            <img src="{% static 'home/asset/images/flickr/3.jpg' %}" alt="" class="img-responsive">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{% static 'home/asset/images/flickr/2.jpg' %}" data-lightbox="picture-7">
+                                            <img src="{% static 'home/asset/images/flickr/2.jpg' %}" alt="" class="img-responsive">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{% static 'home/asset/images/flickr/1.jpg' %}" data-lightbox="picture-8">
+                                            <img src="{% static 'home/asset/images/flickr/1.jpg' %}" alt="" class="img-responsive">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>-->
+                            <!-- End Flickr Widget -->
+                            
+                            
+                            
+                            <!-- Start Recent Post Widget -->
+                            <!-- <div class="widget widget-recent-post">
+                                
+                                <div class="section-heading-2">
+                                    <h3 class="section-title">
+                                    <span>Recent Post</span>
+                                    </h3>
+                                </div>
+                                
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="{% static 'home/asset/images/recent-post/post-02.jpg' %}" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">Nulla facilisi integer lacinia sollicitudin massa</a></h4>
+                                        <ul>
+                                            <li><a href="#">Super User</a></li>
+                                            <li>15 October 2014</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="{% static 'home/asset/images/recent-post/post-03.jpg' %}" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">Quisque cursus metus vitae pharetra auctor sem massa</a></h4>
+                                        <ul>
+                                            <li><a href="#">Super User</a></li>
+                                            <li>15 October 2014</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="asset/images/recent-post/post-04.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">Praesent libero sed cursus ante dapibus diam</a></h4>
+                                        <ul>
+                                            <li><a href="#">Super User</a></li>
+                                            <li>15 October 2014</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!-- End Recent Post Widget -->
+                            
+                            
+                            <!-- Start Blog categories widget -->
+                            <!--
+                            <div class="widget widget-categories">
+                                
+                                <div class="section-heading-2">
+                                    <h3 class="section-title">
+                                    <span>Blog Categories</span>
+                                    </h3>
+                                </div>
+                                
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <a href="#">Blog</a>
+                                        <a href="#" class="cat-counter">(4)</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <a href="#">News</a>
+                                        <a href="#" class="cat-counter">(0)</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <a href="#">Charity</a>
+                                        <a href="#" class="cat-counter">(0)</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <a href="#">Fashion</a>
+                                        <a href="#" class="cat-counter">(0)</a>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                            <!-- End Blog categories widget -->
+                            
+                            
+                            <!-- Start Tag Cloud Widget -->
+                            <!--
+                            <div class="widget widget-tags">
+                                
+                                <div class="section-heading-2">
+                                    <h3 class="section-title">
+                                    <span>Popular Tags</span>
+                                    </h3>
+                                </div>
+                                
+                                <div class="tagcloud">
+                                    <a href="#">Charity</a>
+                                                                <a href="#">Children</a>
+                                                                <a href="#">Education</a>
+                                                                <a href="#">Elderly</a>
+                                                                <a href="#">Humanity</a>
+                                                                <a href="#">Women Rights</a>
+                                                </div>
+                                
+                            </div>
+                            <!-- End Tag Cloud Widget -->
+                            
+                            
+                            
+                        </div>
+                        <!-- End Sidebar Section -->
+                        
                     </div>
                 </div>
-                </div>
-                </div>-->
-            <!-- /.container -->
-            
-        
-        <!-- End Copyright Section -->
-        
-        
-        
-        <!-- Sulfur JS File -->
-        <script src="{% static 'home/asset/js/jquery-2.1.3.min.js' %}"></script>
-        <script src="{% static 'home/asset/js/jquery-migrate-1.2.1.min.js' %}"></script>
-        <script src="{% static 'home/asset/bootstrap/js/bootstrap.min.js' %}"></script>
-        <script src="{% static 'home/asset/js/owl.carousel.min.js' %}"></script>
-        <script src="{% static 'home/asset/js/jquery.appear.js' %}"></script>
-        <script src="{% static 'home/asset/js/jquery.fitvids.js' %}"></script>
-        <script src="{% static 'home/asset/js/jquery.nicescroll.min.js' %}"></script>
-        <script src="{% static 'home/asset/js/lightbox.min.js' %}"></script>
-        <script src="{% static 'home/asset/js/count-to.js' %}"></script>
-        <script src="{% static 'home/asset/js/styleswitcher.js' %}"></script>
-        
-        <script src="{% static 'home/asset/js/map.js' %}"></script>
-        <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-        <script src="{% static 'home/asset/js/script.js' %}"></script>
-        
-    
-    </body>
-    {% endblock %}
-</html>
+                <!-- End Blog Page Section -->
+                
+                
+                
+                
+                
+                
+                <!-- Start Footer Section -->
+                <section id="footer-section" class="footer-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="section-heading-2">
+                                    <h3 class="section-title">
+                                    <span>Office Address</span>
+                                    </h3>
+                                </div>
+                                
+                                <div class="footer-address">
+                                    <ul>
+                                        <li class="footer-contact"><i class="fa fa-home"></i>Hyderabad, Telangana, INDIA</li>
+                                        <li class="footer-contact"><i class="fa fa-envelope"></i><a href="#">info@stemhub.tech</a></li>
+                                        <li class="footer-contact"><i class="fa fa-phone"></i>+91 (703) 241-5866</li>
+                                        <li class="footer-contact"><i class="fa fa-globe"></i><a href="#" target="_blank">www.stemhub.tech</a></li>
+                                    </ul>
+                                </div>
+                                </div><!--/.col-md-3 -->
+                                
+                                
+                                <!--<div class="col-md-3">
+                                    <div class="section-heading-2">
+                                        <h3 class="section-title">
+                                        <span>Latest Tweet</span>
+                                        </h3>
+                                    </div>
+                                    
+                                    <div class="latest-tweet">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <i class="fa fa-twitter fa-2x media-object"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">About 15 days ago</h4>
+                                                <p>Finally Succeeded</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>-->
+                                <!--/.col-md-3 -->
+                                
+                                <div class="col-md-3">
+                                    <div class="section-heading-2">
+                                        <h3 class="section-title">
+                                        <span>Stay With us</span>
+                                        </h3>
+                                    </div>
+                                    <div class="subscription">
+                                        <p></p>
+                                        <div class="form-group">
+                                            <form name="myform4" action="/emailSubscribe/" method="post"  id="blog" novalidate>
+                                                {% csrf_token %}
+                                                <input type="text" class="form-control" placeholder="Your E-mail" id="name" name = "email"required data-validation-required-message="Please enter your name.">
+                                                <input type="submit" class="btn btn-primary" value="Subscribe">
+                                                <!--Paypal Integration starts-->
+                                                <body>
+                                                    
+                                                    <!--
+                                                    <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+                                                    <script>paypal.Buttons().render('body');</script>
+                                                    <script
+                                                    src="https://www.paypal.com/sdk/js?client-id=SB_CLIENT_ID">
+                                                    </script>
+                                                    <div id="paypal-button-container"></div>
+                                                    <script>
+                                                    paypal.Buttons().render('#paypal-button-container');
+                                                    </script>-->
+                                                    <!DOCTYPE html>
+                                                    <head>
+                                                        <!-- Add meta tags for mobile and IE -->
+                                                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                                                        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                                                    </head>
+                                                    <body>
+                                                        <!-- Set up a container element for the button -->
+                                                        <div id="paypal-button-container"></div>
+                                                        <!-- Include the PayPal JavaScript SDK -->
+                                                        <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
+                                                        <script>
+                                                        // Render the PayPal button into #paypal-button-container
+                                                        paypal.Buttons({
+                                                        // Set up the transaction
+                                                        createOrder: function(data, actions) {
+                                                        return actions.order.create({
+                                                        purchase_units: [{
+                                                        amount: {
+                                                        value: '0.01'
+                                                        }
+                                                        }]
+                                                        });
+                                                        },
+                                                        // Finalize the transaction
+                                                        onApprove: function(data, actions) {
+                                                        return actions.order.capture().then(function(details) {
+                                                        // Show a success message to the buyer
+                                                        alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                                                        });
+                                                        }
+                                                        }).render('#paypal-button-container');
+                                                        </script>
+                                                    </body>
+                                                    
+                                                    
+                                                </body>
+                                                <!-- Paypal Integration ends-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- <div class="col-md-3">
+                                        <div class="section-heading-2">
+                                            <h3 class="section-title">
+                                            <span>FLICKR STREAM</span>
+                                            </h3>
+                                        </div>
+                                        
+                                        <div class="flickr-widget">
+                                            <ul class="flickr-list">
+                                                <li>
+                                                    <a href="{% static 'home/asset/images/portfolio/MyKaggle.jpg' %}" data-lightbox="picture-1">
+                                                        <img src="{% static 'home/asset/images/portfolio/MyKaggle.jpg' %}" alt="" class="img-responsive">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{% static 'home/asset/images/portfolio/MyGithub.jpg' %}" data-lightbox="picture-2">
+                                                        <img src="{% static 'home/asset/images/portfolio/MyGithub.jpg' %}" alt="" class="img-responsive">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{% static 'home/asset/images/portfolio/MyWebsite.jpg' %}" data-lightbox="picture-3">
+                                                        <img src="{% static 'home/asset/images/portfolio/MyWebsite.jpg' %}" alt="" class="img-responsive">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{% static 'home/asset/images/portfolio/MyGithub.jpg' %}" data-lightbox="picture-4">
+                                                        <img src="{% static 'home/asset/images/portfolio/MyGithub.jpg' %}" alt="" class="img-responsive">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{% static 'home/asset/images/portfolio/MyWebsite.jpg' %}" data-lightbox="picture-5">
+                                                        <img src="{% static 'home/asset/images/portfolio/MyWebsite.jpg' %}" alt="" class="img-responsive">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{% static 'home/asset/images/portfolio/MyKaggle.jpg' %}" data-lightbox="picture-6">
+                                                        <img src="{% static 'home/asset/images/portfolio/MyKaggle.jpg' %}" alt="" class="img-responsive">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{% static 'home/asset/images/portfolio/MyWebsite.jpg' %}" data-lightbox="picture-7">
+                                                        <img src="{% static 'home/asset/images/portfolio/MyWebsite.jpg' %}" alt="" class="img-responsive">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{% static 'home/asset/images/portfolio/MyKaggle.jpg' %}" data-lightbox="picture-8">
+                                                        <img src="{% static 'home/asset/images/portfolio/MyKaggle.jpg' %}" alt="" class="img-responsive">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        </div><!--/.col-md-3 -->
+                                        </div><!--/.row -->
+                                        </div><!-- /.container -->
+                                    </section>
+                                    <!-- End Footer Section -->
+                                    
+                                    
+                                    <!-- Start Copyright Section -->
+                                    
+                                    <!--  <div id="copyright-section" class="copyright-section">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <div class="copyright">
+                                                        Copyright © 2014. All Rights Reserved.Design and Developed by <a href="http://www.themefisher.com">Themefisher</a>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-5">
+                                                    <div class="copyright-menu pull-right">
+                                                        
+                                                        <ul>
+                                                            <li><a href="#" class="active">Home</a></li>
+                                                            <li><a href="#">Sample Site</a></li>
+                                                            <li><a href="#">getbootstrap.com</a></li>
+                                                        </ul>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>-->
+                                    <!-- /.container -->
+                                    
+                                    
+                                    <!-- End Copyright Section -->
+                                    
+                                    
+                                    
+                                    <!-- Sulfur JS File -->
+                                    <script src="{% static 'home/asset/js/jquery-2.1.3.min.js' %}"></script>
+                                    <script src="{% static 'home/asset/js/jquery-migrate-1.2.1.min.js' %}"></script>
+                                    <script src="{% static 'home/asset/bootstrap/js/bootstrap.min.js' %}"></script>
+                                    <script src="{% static 'home/asset/js/owl.carousel.min.js' %}"></script>
+                                    <script src="{% static 'home/asset/js/jquery.appear.js' %}"></script>
+                                    <script src="{% static 'home/asset/js/jquery.fitvids.js' %}"></script>
+                                    <script src="{% static 'home/asset/js/jquery.nicescroll.min.js' %}"></script>
+                                    <script src="{% static 'home/asset/js/lightbox.min.js' %}"></script>
+                                    <script src="{% static 'home/asset/js/count-to.js' %}"></script>
+                                    <script src="{% static 'home/asset/js/styleswitcher.js' %}"></script>
+                                    
+                                    <script src="{% static 'home/asset/js/map.js' %}"></script>
+                                    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+                                    <script src="{% static 'home/asset/js/script.js' %}"></script>
+                                    
+                                    
+                                </body>
+                            {% endblock %}
+                        </html>
